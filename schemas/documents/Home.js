@@ -16,7 +16,7 @@ export default {
     {
       name: "introDescription",
       title: "Introduction Description",
-      type: "string",
+      type: "text",
     },
     {
       name: "resumeButtonText",
@@ -44,14 +44,21 @@ export default {
       type: "array",
       of: [
         {
-          name: "title",
-          title: "title",
-          type: "string",
-        },
-        {
-          name: "image",
-          title: "Image",
-          type: "image",
+          name: "skill",
+          type: "object",
+          title: "Skill",
+          fields: [
+            {
+              name: "title",
+              title: "title",
+              type: "string",
+            },
+            {
+              name: "image",
+              title: "Image",
+              type: "image",
+            },
+          ],
         },
       ],
     },
@@ -62,18 +69,25 @@ export default {
     },
     {
       name: "languages",
-      title: "languagesArray",
+      title: "Languages Array",
       type: "array",
       of: [
         {
-          name: "languagesTitle",
-          title: "languages Title",
-          type: "string",
-        },
-        {
-          name: "image",
-          title: "Image",
-          type: "image",
+          name: "language",
+          title: "Language",
+          type: "object",
+          fields: [
+            {
+              name: "languagesTitle",
+              title: "languages Title",
+              type: "string",
+            },
+            {
+              name: "image",
+              title: "Image",
+              type: "image",
+            },
+          ],
         },
       ],
     },

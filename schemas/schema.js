@@ -11,7 +11,8 @@ import Project from "./documents/Project";
 import BlogPosts from "./documents/BlogPosts";
 import Category from "./documents/Category";
 import blockContent from "./objects/blockContent";
-
+import About from "./documents/About";
+import Contact from "./documents/Contact";
 //objects
 import pageSeo from "./objects/pageSeo";
 
@@ -29,7 +30,8 @@ export default createSchema({
     Category,
     Project,
     blockContent,
-
+    About,
+    Contact,
     pageSeo,
   ]),
 });

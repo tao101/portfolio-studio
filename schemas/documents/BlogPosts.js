@@ -44,13 +44,20 @@ export default {
     },
     {
       name: "categories",
-      title: "Post Categories",
-      type: "reference",
-      to: [
+      title: "Categories",
+      type: "array",
+      of: [
         {
-          name: "category",
-          title: "Select a Category",
-          type: "category",
+          name: "categoryRef",
+          title: "Post Categories",
+          type: "reference",
+          to: [
+            {
+              name: "category",
+              title: "Select a Category",
+              type: "category",
+            },
+          ],
         },
       ],
     },

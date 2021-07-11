@@ -1,6 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 
-import { FcSettings, FcHome } from "react-icons/fc";
+import { FcSettings, FcHome, FcAbout, FcContacts } from "react-icons/fc";
 
 export default () =>
   S.list()
@@ -15,6 +15,8 @@ export default () =>
             .schemaType("websiteSetting")
             .documentId("websiteSetting")
         ),
+      S.divider(),
+      S.divider(),
       S.listItem()
         .title("Home Page")
         .icon(FcHome)
@@ -24,8 +26,31 @@ export default () =>
             .schemaType("homePage")
             .documentId("homePage")
         ),
+      S.listItem()
+        .title("AboutPage")
+        .icon(FcAbout)
+        .child(
+          S.document()
+            .title("AboutPage")
+            .schemaType("AboutPage")
+            .documentId("AboutPage")
+        ),
+      S.listItem()
+        .title("ContactPage")
+        .icon(FcContacts)
+        .child(
+          S.document()
+            .title("ContactPage")
+            .schemaType("ContactPage")
+            .documentId("ContactPage")
+        ),
       S.divider(),
+      S.divider(),
+
       ...S.documentTypeListItems().filter(
-        (listItem) => !["websiteSetting", "homePage"].includes(listItem.getId())
+        (listItem) =>
+          !["websiteSetting", "homePage", "AboutPage", "ContactPage"].includes(
+            listItem.getId()
+          )
       ),
     ]);

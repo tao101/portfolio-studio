@@ -14,6 +14,11 @@ export default {
       type: "image",
     },
     {
+      name: "followMeText",
+      title: "Follow Me Text",
+      type: "string",
+    },
+    {
       name: "facebookUrl",
       title: "Facebook Account Url",
       type: "url",
@@ -32,6 +37,26 @@ export default {
       name: "linkedinUrl",
       title: "Linkedin Account Url",
       type: "url",
+    },
+    {
+      name: "subscribeBoxTitle",
+      title: "Subscribe Box Title",
+      type: "string",
+    },
+    {
+      name: "subscribeBoxDescription",
+      title: "Subscribe Box Description",
+      type: "string",
+    },
+    {
+      name: "subscribeText",
+      title: "Subscribe Text",
+      type: "string",
+    },
+    {
+      name: "footerText",
+      title: "Footer Text",
+      type: "string",
     },
   ],
 };
